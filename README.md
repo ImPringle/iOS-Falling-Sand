@@ -12,7 +12,7 @@ This project contains two sections, a 2D falling sand simulator, and a 1D versio
 
 Well I've been really interested in simulations, and I wanted to make my first simulation project, and I thought a falling sand simulator would be great for my first project, but I wanted to do it a little bit different.
 
-Since I watched a lot of videos of this project, I noticed that none of those projects were made using Swift, so I decided to make my own version in Swift.
+Since I watched a lot of videos about this project, I noticed that none of those projects were made using Swift, so I decided to make my own version in Swift.
 
 ## Shoutout to The Coding Train
 I want to say thanks to ***Daniel Shiffman*** who inspired me to make this project, and he is helping me a lot to understand computer science concepts.
