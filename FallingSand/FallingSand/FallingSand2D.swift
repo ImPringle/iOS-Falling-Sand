@@ -9,8 +9,8 @@ import SwiftUI
 
 struct FallingSand2D: View {
     
-    @State var actual = [[Int]](repeating: [Int](repeating: 0, count: 30), count: 60)
-    @State var next = [[Int]](repeating: [Int](repeating: 0, count: 30), count: 60)
+    @State var actual = [[Int]](repeating: [Int](repeating: 0, count: 20), count: 40)
+    @State var next = [[Int]](repeating: [Int](repeating: 0, count: 20), count: 40)
     @State var isChanged: Bool = false
     
     @State private var counter: Int = 0
@@ -22,7 +22,7 @@ struct FallingSand2D: View {
     }
     
     func update2d () {
-        DispatchQueue.main.asyncAfter(deadline: .now() + (1/32)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + (1/48)) {
             
             counter = counter + 1
 //            actual[0][7] = 1
@@ -98,24 +98,37 @@ struct FallingSand2D: View {
 //                                .foregroundColor(.black)
                             if (actual[i][j] == 0) {
                                 Rectangle()
-                                    .frame(width: 10, height: 10)
+                                    .frame(width: 15, height: 15)
                                     .foregroundColor(.black)
+                                    .clipShape(RoundedRectangle(cornerRadius: 3, style: .continuous))
+                                    
                             } else {
                                 Rectangle()
-                                    .frame(width: 10, height: 10)
+                                    .frame(width: 15, height: 15)
                                     .foregroundColor(.yellow)
+                                    .clipShape(RoundedRectangle(cornerRadius: 3, style: .continuous))
+                                    .shadow(color: .yellow, radius: 5)
                             }
                         }
                     }
                 }
             }
-            Text("\(counter)")
+            Text("Frames: \(counter)")
+                .foregroundStyle(.green)
                 .onAppear {
                     update2d()
                 }
 //            Text("actual.count: \(actual.count)")
         }
         .navigationTitle("Falling Sand 2D")
+        .toolbar {
+            ToolbarItem () {
+                Button("Reset"){
+                    actual = [[Int]](repeating: [Int](repeating: 0, count: 20), count: 40)
+                    next = [[Int]](repeating: [Int](repeating: 0, count: 20), count: 40)
+                }
+            }
+        }
     }
 }
 

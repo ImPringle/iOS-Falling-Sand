@@ -18,6 +18,9 @@ struct ContentView: View {
                 NavigationLink(destination: FallingSand2D()) {
                     Text("Falling Sand 2D")
                 }
+                NavigationLink(destination: GameOfLifeView()) {
+                    Text("Game of Life")
+                }
 
             }
             .navigationTitle("Simulator")

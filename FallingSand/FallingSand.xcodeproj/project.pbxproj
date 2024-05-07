@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC3EC9302BE99CA10087CD80 /* GameOfLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EC92F2BE99CA10087CD80 /* GameOfLifeView.swift */; };
 		FC7246C42BC9E9170050F4FB /* FallingSandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7246C32BC9E9170050F4FB /* FallingSandApp.swift */; };
 		FC7246C62BC9E9170050F4FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7246C52BC9E9170050F4FB /* ContentView.swift */; };
 		FC7246C82BC9E9180050F4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7246C72BC9E9180050F4FB /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC3EC92F2BE99CA10087CD80 /* GameOfLifeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeView.swift; sourceTree = "<group>"; };
 		FC7246C02BC9E9170050F4FB /* FallingSand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FallingSand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7246C32BC9E9170050F4FB /* FallingSandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallingSandApp.swift; sourceTree = "<group>"; };
 		FC7246C52BC9E9170050F4FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				FC7246C52BC9E9170050F4FB /* ContentView.swift */,
 				FCEB30372BE04BD800EDF743 /* FallingSand2D.swift */,
 				FCEB30352BE04ACC00EDF743 /* FallingSand1D.swift */,
+				FC3EC92F2BE99CA10087CD80 /* GameOfLifeView.swift */,
 				FC7246C72BC9E9180050F4FB /* Assets.xcassets */,
 				FC7246C92BC9E9180050F4FB /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3EC9302BE99CA10087CD80 /* GameOfLifeView.swift in Sources */,
 				FC7246C62BC9E9170050F4FB /* ContentView.swift in Sources */,
 				FCEB30362BE04ACC00EDF743 /* FallingSand1D.swift in Sources */,
 				FC7246C42BC9E9170050F4FB /* FallingSandApp.swift in Sources */,
